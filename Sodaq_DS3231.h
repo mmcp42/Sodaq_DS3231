@@ -59,10 +59,10 @@ public:
     uint8_t hour() const        { return hh; }
  
     uint8_t date() const        { return d; }
-    uint8_t month() const       { return m; }
+    uint8_t month() const       { return m; }    /*Jan=1 Feb=2 Mar=3 Apr=4 May=5 Jun=6 Jul=7 Aug=8 Sep=9 Oct=10 Nov=11 Dec=12 */
     uint16_t year() const       { return 2000 + yOff; }		// Notice the 2000 !
 
-    uint8_t dayOfWeek() const   { return wday;}  /*Su=1 Mo=2 Tu=3 We=4 Th=5 Fr=6 Sa=7 */
+    uint8_t dayOfWeek() const   { return wday;}  /*Su=0 Mo=1 Tu=2 We=3 Th=4 Fr=5 Sa=6 */
 
     // 32-bit time as seconds since 1/1/2000
     uint32_t get() const;

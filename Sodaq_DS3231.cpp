@@ -301,7 +301,7 @@ void Sodaq_DS3231::convertTemperature()
 //Read the temperature value from the register and convert it into float (deg C)
 float Sodaq_DS3231::getTemperature()
 {
-    int   temperatureCelsius;
+    // int   temperatureCelsius;					// 06-jan-2014 mmcp removed
     float fTemperatureCelsius;
     uint8_t tUBYTE  = readRegister(DS3231_TMP_UP_REG);  //Two's complement form
     uint8_t tLRBYTE = readRegister(DS3231_TMP_LOW_REG); //Fractional part
